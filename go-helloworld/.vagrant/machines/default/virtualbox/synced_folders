@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/vboxuser/cloud_native_course/go-helloworld","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
