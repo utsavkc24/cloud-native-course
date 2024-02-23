@@ -52,6 +52,11 @@ docker login
 docker push pixelpotato/go-helloworld:v1.0.0
 ```
 
+
+### Prior step
+```
+#Installation K3s, a lightweighted K8
+```
 ### Step 3. Deploy to Kubernetes:
 ```
 # Shortcut method to run the application with headless pods
