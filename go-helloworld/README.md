@@ -95,3 +95,4 @@ kubectl create secret generic test-sec --from-literal=color=red
 kubectl create ns test-udacity
 kubectl create deploy [...] -n test-udacity
 ```
+
