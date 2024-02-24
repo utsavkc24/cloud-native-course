@@ -90,3 +90,8 @@ kubectl create cm test-cm --from-literal=color=blue
 kubectl create secret generic test-sec --from-literal=color=red
 ```
 
+###Step 6. how to create a Namespace resource and retrieve resources from a specific Namespace.
+```
+kubectl create ns test-udacity
+kubectl create deploy [...] -n test-udacity
+```
