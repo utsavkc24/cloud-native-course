@@ -68,5 +68,15 @@ kubectl get pods
 # Copy the pod name from the output above
 # Access the application on the local host
 kubectl port-forward pod/go-helloworld-fcd468f98-rsj7p 6111:6111
-```
 Access the application in the local machine on http://192.168.50.4:6111/ or http://127.0.0.1:6111/ 
+```
+
+
+
+
+###Step 4. expose the Go hello-world application through a ClusterIP service
+```
+#Create a Service object that exposes the deployment 'go-helloworld', which listen at port 6112 and routing traffic to the Service‘s pods which listens at 6112
+kubectl expose deployment go-helloworld --port=6112 --target-port=6112
+```
+
