@@ -80,3 +80,13 @@ Access the application in the local machine on http://192.168.50.4:6111/ or http
 kubectl expose deployment go-helloworld --port=6112 --target-port=6112
 ```
 
+
+###Step 5. how Configmap and Secret resources can be created using literal values from the command line
+```
+#Create config map
+kubectl create cm test-cm --from-literal=color=blue
+
+#create secret
+kubectl create secret generic test-sec --from-literal=color=red
+```
+
